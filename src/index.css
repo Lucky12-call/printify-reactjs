@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+@layer {
+  .bg-clipPath {
+    clip-path: polygon(
+      0 0,
+      40% 0,
+      50% 5%,
+      60% 0,
+      100% 0,
+      100% 90%,
+      60% 90%,
+      50% 95%,
+      40% 90%,
+      0 90%
+    );
+  }
+
+  .bg-clipPath2 {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 90%,
+      60% 90%,
+      50% 100%,
+      40% 90%,
+      0 90%
+    );
+  }
+
+  .custom-shadow {
+    box-shadow: 5px 5px 10px 0 rgb(206, 206, 206);
+  }
+
+  .bg-img {
+    background: url(https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
