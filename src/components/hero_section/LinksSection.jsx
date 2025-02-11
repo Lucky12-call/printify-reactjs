@@ -7,19 +7,25 @@ import {
   FaDiscord,
   FaTiktok,
 } from "react-icons/fa";
+import { motion } from "motion/react";
 
 const LinksSection = () => {
   return (
-    <>
-      <div className="flex-shrink-0 flex justify-between items-center mt-44">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.6, duration: 0.5 }}
+      className="flex flex-col-reverse md:flex-col justify-center items-center gap-5 mt-24"
+    >
+      <div className="w-full flex justify-center md:justify-between items-center mt-10 md:mt-44">
         <img
-          src="https://printify.com/pfh/media/logo-old-B5JY5YNQ.svg"
-          alt="logo"
-          className="h-[50px] w-[135px] inline-block"
+          src="logo.png"
+          alt="footer-logo"
+          className="h-[50px] w-[135px] inline-block max-md:hidden"
         />
 
         {/* social media icons */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 md:gap-4 max-md:mb-5">
           <button>
             <FaFacebookF
               size={32}
@@ -74,10 +80,10 @@ const LinksSection = () => {
       </div>
 
       {/* links section  */}
-      <div className="grid grid-flow-col grid-cols-4 gap-48 mt-24 px-5 text-sm font-light">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-48 mt-24 px-5 text-sm font-light">
         {/* column-1  */}
         <div className="flex flex-col gap-3">
-          <h3 className="text-base font-semibold">Integrations</h3>
+          <h3 className="text-lg md:text-xl font-semibold">Integrations</h3>
 
           <a href="#">Shopify</a>
           <a href="#">Etsy</a>
@@ -96,7 +102,7 @@ const LinksSection = () => {
 
         {/* column-2  */}
         <div className="flex flex-col gap-3">
-          <h3 className="text-base font-semibold">Discover</h3>
+          <h3 className="text-lg md:text-xl font-semibold">Discover</h3>
 
           <a href="#">Blog</a>
           <a href="#">Guides</a>
@@ -115,7 +121,7 @@ const LinksSection = () => {
 
         {/* column-3  */}
         <div className="flex flex-col gap-3">
-          <h3 className="text-base font-semibold">Start selling</h3>
+          <h3 className="text-lg md:text-xl font-semibold">Start selling</h3>
 
           <a href="#">Custom T-shirts</a>
           <a href="#">Custom Hoodies</a>
@@ -136,7 +142,7 @@ const LinksSection = () => {
 
         {/* column-4  */}
         <div className="flex flex-col gap-3">
-          <h3 className="text-base font-semibold">Printify</h3>
+          <h3 className="text-lg md:text-xl font-semibold">Printify</h3>
 
           <a href="#">Print on Demand</a>
           <a href="#">Print Providers</a>
@@ -158,7 +164,7 @@ const LinksSection = () => {
           <a href="#">Sitemap</a>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

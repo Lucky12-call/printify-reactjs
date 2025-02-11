@@ -13,25 +13,25 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <>
-      <div className="relative z-50">
+      <div className="md:relative z-50">
         <Navbar />
       </div>
 
-      <div className="w-[80%] mx-auto mt-32">
+      <div className="w-full md:w-[80%] mx-auto max-md:pt-44">
         <Hero />
         <Features />
       </div>
 
       <Design />
 
-      <div className="w-[80%] mx-auto mt-32">
-        <ConnectToStore className="z-0" />
+      <div className="w-full md:w-[80%] mx-auto">
+        <ConnectToStore className="md:z-0" />
         <TalkToSales />
       </div>
 
       <ReviewSection />
 
-      <div className=" w-[80%] mx-auto">
+      <div className="w-full md:w-[80%] mx-auto">
         <StartSelling />
         <LinksSection />
       </div>

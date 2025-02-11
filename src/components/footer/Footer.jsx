@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="h-32 w-full flex flex-col gap-4 justify-center items-center bg-gray-100 text-gray-500 mt-20">
+    <footer className="h-32 w-full flex flex-col gap-2 md:gap-4 justify-center items-center bg-gray-100 text-gray-500 mt-5 md:mt-20 max-md:px-5">
       <div className="inline-flex items-center gap-5 ">
         <a href="#" className="text-xs">
           Intellectual Property Policy
